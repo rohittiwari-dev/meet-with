@@ -1,0 +1,244 @@
+footer {
+	color: rgb(54, 54, 54);
+	font-size: 0.95rem;
+	box-shadow: 0 -1px 2px rgba(43, 51, 63, 0.788);
+	background-image: linear-gradient(to right, #ffc7f670 30%, #ffceae62 90%);
+}
+.container {
+	display: grid;
+	padding-top: 2rem;
+	grid-template-columns: 1fr;
+}
+.first,
+.second,
+.third {
+	padding: 0.1rem 4rem;
+	display: flex;
+	justify-content: space-between;
+}
+.first .left p {
+	padding: 0.2rem 0;
+	width: 80%;
+	margin: 0;
+}
+.first .left .heading .logo-text {
+	margin: 0;
+	padding: 0;
+	font-size: 1.5rem;
+}
+.first .right .location {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+.first .right .location div p {
+	padding: 0;
+	margin: 0;
+}
+.first .right .location div {
+	padding: 0;
+	margin: 0;
+	width: 80%;
+}
+.first .right .location {
+	color: rgb(38, 51, 77);
+}
+.first .mid,
+.first .right,
+.first .left .heading {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	column-gap: 0.5rem;
+}
+.first .right {
+	text-align: right;
+	align-items: flex-end;
+}
+.first .left,
+.first .mid,
+.first .right {
+	width: 33%;
+	flex-direction: column;
+}
+
+.first .mid .foot-items,
+.first .left .foot-items,
+.first .right .foot-items {
+	padding: 0.2rem 0;
+	text-decoration: none;
+	color: rgb(32, 116, 184);
+	transition: all 0.2s ease-in-out;
+}
+.first .mid .foot-items:hover,
+.first .left .foot-items:hover,
+.first .right .foot-items:hover {
+	color: rgb(16, 146, 129);
+	transform: scale(1.02);
+}
+.second,
+.third {
+	justify-content: space-around;
+}
+.third {
+	padding-bottom: 1rem;
+	justify-content: center;
+}
+.third a {
+	text-decoration: none;
+	font-size: 0.8rem;
+	color: rgb(32, 116, 184);
+}
+.third a:hover {
+	color: rgb(16, 146, 129);
+}
+.second .left p,
+.second .right p {
+	font-size: 0.95rem;
+	text-align: Center;
+}
+.second .left p a {
+	color: rgb(32, 116, 184);
+	text-decoration: none;
+}
+
+.second .left p a:hover {
+	color: rgb(16, 146, 129);
+}
+.second .right .social-foot-link {
+	width: 100%;
+	display: flex;
+}
+.second .right p {
+	padding: 0;
+	text-align: center;
+	margin: 0;
+}
+.second .right .social-foot-link a {
+	font-size: 1.6rem;
+	padding: 0;
+	transition: all 0.3s ease-in-out;
+	margin: 0 0.3rem;
+}
+.second .right .social-foot-link a:hover {
+	transform: scale(1.2);
+}
+.instagram {
+	color: rgb(255, 0, 128);
+}
+.youtube {
+	color: rgb(255, 0, 34);
+}
+.facebook {
+	color: rgb(0, 153, 255);
+}
+.linkedin {
+	color: rgb(2, 90, 252);
+}
+.twitter {
+	color: rgb(2, 214, 252);
+}
+
+@media screen and (max-width: 900px) {
+	.container {
+		font-size: 80%;
+	}
+	.first {
+		padding: 1rem 2rem;
+	}
+	.first .mid {
+		width: 20%;
+	}
+	.first .left,
+	.first .right {
+		width: 40%;
+	}
+	.first .left .heading .logo-text {
+		font-size: 160%;
+	}
+	.first .left .heading .logo-img {
+		width: 25px;
+	}
+	.first .right .location div {
+		width: 100%;
+	}
+	.first .left p {
+		width: 100%;
+	}
+	.second .left p,
+	.second .right p {
+		font-size: 110%;
+		text-align: Center;
+	}
+	.second .right .social-foot-link a i {
+		font-size: 130%;
+	}
+}
+@media screen and (max-width: 500px) {
+	.first,
+	.second,
+	.third {
+		padding: 0.1rem 1rem;
+	}
+	.first {
+		flex-direction: column;
+		row-gap: 1.5rem;
+		align-items: center;
+	}
+	.first .left,
+	.first .right {
+		text-align: center;
+	}
+	.first .right {
+		align-items: center;
+	}
+	.second {
+		flex-direction: column-reverse;
+	}
+	.second .right .social-foot-link {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.third {
+		margin-top: 1rem;
+		text-align: center;
+	}
+	.container {
+		font-size: 100%;
+	}
+	.first {
+		padding: 1rem 2rem;
+		align-items: center;
+	}
+	.first .mid,
+	.first .left,
+	.first .right {
+		width: 100%;
+	}
+	.first .left .heading .logo-text {
+		font-size: 160%;
+	}
+	.first .left .heading .logo-img {
+		width: 25px;
+	}
+	.first .right .location div {
+		width: 100%;
+	}
+	.first .left p {
+		width: 100%;
+	}
+	.second .left p,
+	.second .right p {
+		font-size: 110%;
+		text-align: Center;
+	}
+	.second .right .social-foot-link a i {
+		font-size: 130%;
+	}
+	.first .mid,
+	.first .right,
+	.first .left .heading {
+		justify-content: center;
+	}
+}
